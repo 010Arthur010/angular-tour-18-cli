@@ -1,13 +1,29 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HeroesComponent } from './heroes/heroes.component';
+import { JudulComponent } from './judul/judul.component';
+import { MessagesComponent } from './messages/messages.component'; 
+import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [HeroesComponent, JudulComponent, MessagesComponent], 
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'angular-tour-18-cli';
+  title = 'Tour of Heroes';
+  // propertyNama: string = 'blablaproperty';
+  // example: string = `"david"`;
+  // valueEmitHeroes: string = '';
+  // valueEmitJudul: string = '';
+  // methodTangkapHeroes(heroName: string) {
+  //   // console.log(heroName);
+  //   this.valueEmitHeroes = heroName;
+  // }
+
+  // methodTangkapJudul(judul: string) {
+  //   // console.log(judul);
+  //   this.valueEmitJudul = judul;
+  // }
 }

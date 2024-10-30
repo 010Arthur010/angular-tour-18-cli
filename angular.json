@@ -5,7 +5,8 @@
   "projects": {
     "angular-tour-18-cli": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+    },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b6e53510-3bb7-4260-8359-279c585640eb"
   }
 }
